@@ -9,6 +9,7 @@ env/
 .venv/
 env.bak/
 venv.bak/
+*venv/
 
 # Distribution / packaging files
 *.egg
