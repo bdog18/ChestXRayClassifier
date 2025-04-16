@@ -9,7 +9,8 @@ env/
 .venv/
 env.bak/
 venv.bak/
-*venv/
+chestxray_venv/
+glcm_env/
 
 # Distribution / packaging files
 *.egg
