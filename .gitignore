@@ -50,3 +50,4 @@ coverage.xml
 # Data Files
 dataroot/
 .env
+Xray_data/
