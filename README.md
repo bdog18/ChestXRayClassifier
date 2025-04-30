@@ -3,6 +3,8 @@
 This project uses machine learning models to classify chest X-ray images into one of three categories: **COVID-19**, **Pneumonia**, or **Normal**. 
 It compares raw pixel-based features with texture-based features (GLCM), and evaluates multiple classifiers with hyperparameter tuning and model selection.
 
+Repository for this project can be found here: https://github.com/bdog18/ChestXRayClassifier
+
 ## Features
 
 - Image cleaning via Roboflow
