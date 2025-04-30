@@ -1,32 +1,46 @@
-# Chest X-Ray Multi-class Classifier
-A brief description of your project goes here.
+# Chest X-Ray Classifier (COVID-19 vs. Pneumonia vs. Normal)
 
-## Setup
-Follow these steps to set up the project on your local machine.
+This project uses machine learning models to classify chest X-ray images into one of three categories: **COVID-19**, **Pneumonia**, or **Normal**. 
+It compares raw pixel-based features with texture-based features (GLCM), and evaluates multiple classifiers with hyperparameter tuning and model selection.
 
-### 1. Create a Virtual Environment
-To keep your dependencies isolated, it's a good practice to use a virtual environment.
-#### On Windows:
+## Features
+
+- Image cleaning via Roboflow
+- GLCM texture feature extraction
+- Model comparisons: Logistic Regression, Random Forest, SVC, k-NN
+- Evaluation using Accuracy, F1, ROC-AUC, Confusion Matrix
+- Feature importance via permutation method
+- Model saving (`joblib`) and reproducibility via `.env`
+
+
+## Setup Instructions
+
+### 1. Create and activate a virtual environment
+
+**Windows:**
+bash
 python -m venv venv
-#### On macOS
+.\venv\Scripts\activate
+
+**macOS/Linux**
 python3 -m venv venv
-
-
-### 2. Enable Virtual Environment
-Enable the virtual environment to use the isolated python packages
-#### On Windows:
-./venv/Scripts/activate
-#### On macOS
 source venv/bin/activate
 
-
-### 3. Install required packages using Requirements.txt
-After activating your virtual environtment, use this to install the required packages
-
+### 2. Install Requirements
 pip install -r requirements.txt
 
+### 3. Run the project
+Run main.ipynb in Jupyter Notebook or VSCode.
 
-### 4. Deactivate Virtual Environtment when done
-Put the following in the terminal if you want to deactivate the virtual environment after working:
+### 4. Optional
+Set your Roboflow API key in a .env file:
+    ROBOFLOW_API_KEY=your_key_here
 
-deactivate
+
+## Folder Structure
+dataroot/: Raw and cleaned X-ray images
+models/: Saved model files (pickle format)
+
+## Acknowledgments
+Dataset source: Mendeley Chest X-Ray Repository
+Roboflow API for image cleaning
