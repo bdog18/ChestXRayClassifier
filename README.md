@@ -15,9 +15,7 @@ Repository for this project can be found here: https://github.com/bdog18/ChestXR
 - Model saving (`joblib`) and reproducibility via `.env`
 
 ## Folder Structure
-dataroot/: Raw and cleaned X-ray images
-models/: Saved model files (pickle format)
+dataroot/: Raw and cleaned X-ray images <br /> models/: Saved model files (pickle format)
 
 ## Acknowledgments
-Dataset source: Mendeley Chest X-Ray Repository
-Roboflow API for image cleaning
+Dataset source: Mendeley Chest X-Ray Repository <br /> Roboflow API for image cleaning
